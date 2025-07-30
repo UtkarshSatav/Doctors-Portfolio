@@ -6,7 +6,7 @@
     <title>Doctor's Portfolio</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@400;500&family=Source+Sans+Pro:wght@400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&family=Rufina:wght@400;700&family=Source+Sans+Pro:wght@400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
@@ -75,25 +75,293 @@
         </section>
 
         <section class="doctor-details">
+            <div class="doctor-details-header">
+                <p class="details-subtitle">ABOUT ME</p>
+                <h2>I am committed to providing the highest standard of medical care that you and your family deserve.</h2>
+            </div>
             <div class="details-container">
                 <div class="doctor-image">
-                    <img src="https://websitedemos.net/certified-life-coach-04/wp-content/uploads/sites/778/2021/02/life-coach-template-about-img.jpg" alt="Dr. Satav">
+                    <img src="https://websitedemos.net/certified-life-coach-04/wp-content/uploads/sites/778/2021/02/life-coach-img.jpg" alt="Dr. Satav">
                 </div>
                 <div class="doctor-info">
-                    <p>Dr. Satav holds an M.D. from the prestigious Harvard Medical School and has over 15 years of experience in internal medicine. He is a board-certified physician known for his patient-centric approach and dedication to clinical excellence.</p>
+                    <p><strong>Dr. Satav holds an M.D. from the prestigious Harvard Medical School</strong> and has over 15 years of experience in internal medicine. He is a board-certified physician known for his patient-centric approach and dedication to clinical excellence.</p>
                     <p>He continuously engages in medical research and has published several papers on cardiovascular health. His commitment is to provide not just treatment, but also education and preventive care to his patients.</p>
                     <a href="#" class="read-more">READ MORE <i class="fas fa-arrow-right"></i></a>
                     <blockquote class="quote">
                         "The good physician treats the disease; the great physician treats the patient who has the disease."
                     </blockquote>
                     <div class="signature">
-                        <img src="https://websitedemos.net/certified-life-coach-04/wp-content/uploads/sites/778/2021/02/life-coach-template-signature.png" alt="Dr. Satav's Signature">
+                        <img src="https://websitedemos.net/certified-life-coach-04/wp-content/uploads/sites/778/2021/02/signature.png" alt="Dr. Satav's Signature">
                     </div>
                     <p class="doctor-name">DR. SATAV</p>
                 </div>
             </div>
         </section>
+
+        <section class="appointment-booking">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Book an Appointment</h2>
+                    <p>Schedule your visit with Dr. Satav</p>
+                </div>
+                
+                <form id="appointmentForm" class="booking-form">
+                    <div class="form-group">
+                        <label for="name">Full Name</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="phone">Phone Number</label>
+                        <input type="tel" id="phone" name="phone" required>
+                    </div>
+                    
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="date">Appointment Date</label>
+                            <input type="date" id="date" name="date" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="time">Preferred Time</label>
+                            <select id="time" name="time" required>
+                                <option value="">Select a time</option>
+                                <!-- Time slots will be populated by JavaScript -->
+                            </select>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="message">Additional Notes (Optional)</label>
+                        <textarea id="message" name="message" rows="4"></textarea>
+                    </div>
+                    
+                    <button type="submit" class="btn-book">Book Appointment</button>
+                </form>
+            </div>
+        </section>
+
+        <!-- Testimonials Section -->
+        <section class="testimonials">
+            <div class="container">
+                <div class="section-header">
+                    <h2>What Our Patients Say</h2>
+                    <p>Hear from those who've experienced our care</p>
+                </div>
+                
+                <div class="testimonial-tracks">
+                    <!-- First row - moves left -->
+                    <div class="testimonial-track track-1">
+                        <div class="testimonial-card">
+                            <div class="testimonial-rating">★★★★★</div>
+                            <p class="testimonial-text">Dr. Satav provided exceptional care during my treatment. His expertise and bedside manner are unmatched.</p>
+                            <div class="testimonial-author">
+                                <img src="https://randomuser.me/api/portraits/women/43.jpg" alt="Sarah Johnson">
+                                <div>
+                                    <h4>Sarah Johnson</h4>
+                                    <p>Patient</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="testimonial-card">
+                            <div class="testimonial-rating">★★★★★</div>
+                            <p class="testimonial-text">Professional, knowledgeable, and caring. I highly recommend Dr. Satav to anyone seeking quality healthcare.</p>
+                            <div class="testimonial-author">
+                                <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Michael Chen">
+                                <div>
+                                    <h4>Michael Chen</h4>
+                                    <p>Patient</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="testimonial-card">
+                            <div class="testimonial-rating">★★★★★</div>
+                            <p class="testimonial-text">The entire team is wonderful. They made me feel comfortable throughout my entire treatment process.</p>
+                            <div class="testimonial-author">
+                                <img src="https://randomuser.me/api/portraits/women/68.jpg" alt="Emily Rodriguez">
+                                <div>
+                                    <h4>Emily Rodriguez</h4>
+                                    <p>Patient</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="testimonial-card">
+                            <div class="testimonial-rating">★★★★★</div>
+                            <p class="testimonial-text">I've been a patient for years and always receive top-notch care. Highly recommended!</p>
+                            <div class="testimonial-author">
+                                <img src="https://randomuser.me/api/portraits/men/75.jpg" alt="David Kim">
+                                <div>
+                                    <h4>David Kim</h4>
+                                    <p>Patient</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="testimonial-card">
+                            <div class="testimonial-rating">★★★★★</div>
+                            <p class="testimonial-text">Dr. Satav took the time to explain everything in detail. I felt heard and well taken care of.</p>
+                            <div class="testimonial-author">
+                                <img src="https://randomuser.me/api/portraits/women/29.jpg" alt="Jennifer Lee">
+                                <div>
+                                    <h4>Jennifer Lee</h4>
+                                    <p>Patient</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="testimonial-card">
+                            <div class="testimonial-rating">★★★★☆</div>
+                            <p class="testimonial-text">Great experience overall. The staff is friendly and the doctor is very professional.</p>
+                            <div class="testimonial-author">
+                                <img src="https://randomuser.me/api/portraits/men/42.jpg" alt="James Wilson">
+                                <div>
+                                    <h4>James Wilson</h4>
+                                    <p>Patient</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Second row - moves right -->
+                    <div class="testimonial-track track-2">
+                        <div class="testimonial-card">
+                            <div class="testimonial-rating">★★★★★</div>
+                            <p class="testimonial-text">The level of care and attention to detail is exceptional. Thank you for everything!</p>
+                            <div class="testimonial-author">
+                                <img src="https://randomuser.me/api/portraits/men/51.jpg" alt="Robert Taylor">
+                                <div>
+                                    <h4>Robert Taylor</h4>
+                                    <p>Patient</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="testimonial-card">
+                            <div class="testimonial-rating">★★★★★</div>
+                            <p class="testimonial-text">Dr. Satav is an excellent doctor who truly cares about his patients. Highly recommended!</p>
+                            <div class="testimonial-author">
+                                <img src="https://randomuser.me/api/portraits/women/35.jpg" alt="Lisa Martinez">
+                                <div>
+                                    <h4>Lisa Martinez</h4>
+                                    <p>Patient</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="testimonial-card">
+                            <div class="testimonial-rating">★★★★★</div>
+                            <p class="testimonial-text">The doctor was very thorough and took the time to answer all my questions. Great experience!</p>
+                            <div class="testimonial-author">
+                                <img src="https://randomuser.me/api/portraits/men/28.jpg" alt="Thomas Brown">
+                                <div>
+                                    <h4>Thomas Brown</h4>
+                                    <p>Patient</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="testimonial-card">
+                            <div class="testimonial-rating">★★★★★</div>
+                            <p class="testimonial-text">I'm so grateful for the care I received. The entire staff was professional and compassionate.</p>
+                            <div class="testimonial-author">
+                                <img src="https://randomuser.me/api/portraits/women/52.jpg" alt="Maria Garcia">
+                                <div>
+                                    <h4>Maria Garcia</h4>
+                                    <p>Patient</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="testimonial-card">
+                            <div class="testimonial-rating">★★★★★</div>
+                            <p class="testimonial-text">The doctor's expertise and friendly approach made my visit comfortable and informative.</p>
+                            <div class="testimonial-author">
+                                <img src="https://randomuser.me/api/portraits/men/67.jpg" alt="David Miller">
+                                <div>
+                                    <h4>David Miller</h4>
+                                    <p>Patient</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="testimonial-card">
+                            <div class="testimonial-rating">★★★★★</div>
+                            <p class="testimonial-text">Exceptional care from start to finish. I wouldn't trust anyone else with my health.</p>
+                            <div class="testimonial-author">
+                                <img src="https://randomuser.me/api/portraits/women/63.jpg" alt="Sarah Wilson">
+                                <div>
+                                    <h4>Sarah Wilson</h4>
+                                    <p>Patient</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
 
+    <footer class="site-footer">
+        <div class="footer-container">
+            <div class="footer-section">
+                <h3>Dr. Satav</h3>
+                <p>Providing compassionate and comprehensive healthcare services with a focus on patient well-being and preventive care.</p>
+                <div class="social-links">
+                    <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                    <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+            
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#testimonials">Testimonials</a></li>
+                    <li><a href="#appointment">Book Appointment</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-section">
+                <h4>Contact Info</h4>
+                <ul class="contact-info">
+                    <li><i class="fas fa-map-marker-alt"></i> 123 Medical Center Drive, Health City, HC 12345</li>
+                    <li><i class="fas fa-phone"></i> +1 (555) 123-4567</li>
+                    <li><i class="fas fa-envelope"></i> info@drsatav.com</li>
+                    <li><i class="fas fa-clock"></i> Mon-Fri: 9:00 AM - 6:00 PM</li>
+                </ul>
+            </div>
+            
+            <div class="footer-section">
+                <h4>Newsletter</h4>
+                <p>Subscribe to our newsletter for health tips and updates.</p>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Your Email" required>
+                    <button type="submit">Subscribe</button>
+                </form>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Dr. Satav. All Rights Reserved.</p>
+            <div class="footer-links">
+                <a href="#">Privacy Policy</a>
+                <span>|</span>
+                <a href="#">Terms of Service</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
 </body>
 </html>

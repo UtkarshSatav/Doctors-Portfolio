@@ -37,7 +37,7 @@ header {
 }
 
 .nav-logo {
-    font-family: 'Playfair Display', serif;
+    font-family: 'Rufina', serif;
     font-size: 2em;
     font-weight: bold;
     color: white;
@@ -94,7 +94,7 @@ header {
 }
 
 .hero-content h1 {
-    font-family: 'Playfair Display', serif;
+    font-family: 'Rufina', serif;
     font-size: 4em;
     margin-bottom: 20px;
 }
@@ -122,7 +122,7 @@ header {
 }
 
 .services-header h2 {
-    font-family: 'Playfair Display', serif;
+    font-family: 'Rufina', serif;
     font-size: 2.5em;
     margin-bottom: 20px;
     color: #333;
@@ -148,12 +148,12 @@ header {
 
 .service-card i {
     font-size: 2.5em;
-    color: #007bff;
+    color: #03A07A;
     margin-bottom: 30px;
 }
 
 .service-card h3 {
-    font-family: 'Playfair Display', serif;
+    font-family: 'Rufina', serif;
     font-size: 1.5em;
     margin-bottom: 15px;
     color: #333;
@@ -167,7 +167,7 @@ header {
 
 .about-us {
     padding: 100px 50px;
-    background-color: #f8f9fa;
+    background-color: #03A07A;
 }
 
 .about-us-container {
@@ -180,21 +180,52 @@ header {
 }
 
 .about-us-heading h2 {
-    font-family: 'Playfair Display', serif;
+    font-family: 'Rufina', serif;
     font-size: 3em;
-    color: #333;
+    color: #fff;
     line-height: 1.3;
 }
 
 .about-us-description p {
     font-size: 1.1em;
-    color: #666;
+    color: #fff;
     line-height: 1.8;
 }
 
 .doctor-details {
+    margin-top: 20px;
     padding: 100px 50px;
-    background-color: #fff;
+    background-color: #f8f9fa;
+}
+
+.doctor-details-header {
+    max-width: 1200px;
+    margin: 0 auto 60px auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 50px;
+}
+
+.details-subtitle {
+    font-size: 0.9em;
+    font-weight: bold;
+    color: #03A07A;
+    letter-spacing: 2px;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    display: inline-block;
+}
+
+.doctor-details-header h2 {
+    font-family: 'Rufina', serif;
+    font-size: 3em;
+    color: #333;
+    line-height: 1.3;
+    margin-top: 15px;
+    max-width: 900px;
 }
 
 .details-container {
@@ -212,12 +243,21 @@ header {
     box-shadow: 0 15px 30px rgba(0,0,0,0.1);
 }
 
+.doctor-info {
+    padding-top: 30px; /* Added space above the doctor info */
+}
+
 .doctor-info p {
     margin-bottom: 20px;
 }
 
+.doctor-info p strong {
+    font-weight: 600;
+    color: #333;
+}
+
 .read-more {
-    color: #007bff;
+    color: #03A07A;
     text-decoration: none;
     font-weight: bold;
     font-size: 0.9em;
@@ -225,13 +265,13 @@ header {
 }
 
 .quote {
-    font-family: 'Playfair Display', serif;
+    font-family: 'Rufina', serif;
     font-size: 1.4em;
-    color: #008f8f;
+    color: #03A07A;
     margin: 40px 0;
     padding-left: 20px;
     font-style: italic;
-    border-left: 3px solid #008f8f;
+    border-left: 3px solid #03A07A;
 }
 
 .signature img {
@@ -244,4 +284,531 @@ header {
     letter-spacing: 2px;
     font-size: 0.9em;
     color: #333;
+}
+
+/* Appointment Booking Section */
+.appointment-booking {
+    padding: 50px 50px;
+    background-color: #f8f9fa;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.section-header {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.section-header h2 {
+    font-family: 'Rufina', serif;
+    font-size: 2.8em;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.section-header p {
+    font-size: 1.2em;
+    color: #666;
+}
+
+.booking-form {
+    max-width: 800px;
+    margin: 0 auto;
+    background: white;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+}
+
+.form-group {
+    margin-bottom: 25px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 500;
+    color: #333;
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group input[type="tel"],
+.form-group input[type="date"],
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1em;
+    transition: border-color 0.3s;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: #03A07A;
+}
+
+.form-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.btn-book {
+    background-color: #03A07A;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    font-size: 1em;
+    font-weight: 500;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    transition: background-color 0.3s;
+}
+
+.btn-book:hover {
+    background-color: #028a6a;
+}
+
+/* Testimonials Section */
+.testimonials {
+    padding: 100px 0;
+    background-color: #fff;
+    overflow: hidden;
+}
+
+.testimonial-tracks {
+    margin-top: 50px;
+    position: relative;
+    overflow: hidden;
+    padding: 20px 0;
+}
+
+.testimonial-track {
+    display: flex;
+    gap: 30px;
+    width: max-content;
+    will-change: transform;
+}
+
+.track-1 {
+    animation: scroll 40s linear infinite;
+    margin-bottom: 30px;
+}
+
+.track-2 {
+    animation: scroll 45s linear infinite reverse;
+}
+
+.testimonial-tracks::before,
+.testimonial-tracks::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 100px;
+    z-index: 2;
+    pointer-events: none;
+}
+
+.testimonial-tracks::before {
+    left: 0;
+    background: linear-gradient(90deg, rgba(255,255,255,0.9) 0%, rgba(255,255,255,0) 100%);
+}
+
+.testimonial-tracks::after {
+    right: 0;
+    background: linear-gradient(270deg, rgba(255,255,255,0.9) 0%, rgba(255,255,255,0) 100%);
+}
+
+.testimonial-track:hover {
+    animation-play-state: paused;
+}
+
+/* Pause animation when hovering over any card */
+.testimonial-card:hover ~ .testimonial-track,
+.testimonial-card:hover {
+    animation-play-state: paused;
+}
+
+.testimonial-card {
+    flex: 0 0 350px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+    padding: 30px;
+    transition: all 0.3s ease;
+    border: 1px solid #eee;
+    position: relative;
+    z-index: 1;
+    margin: 0 5px;
+}
+
+.testimonial-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+}
+
+.testimonial-rating {
+    color: #FFD700;
+    font-size: 1.2em;
+    margin-bottom: 15px;
+    letter-spacing: 2px;
+}
+
+.testimonial-text {
+    color: #666;
+    line-height: 1.7;
+    margin-bottom: 20px;
+    font-style: italic;
+    min-height: 100px;
+}
+
+.testimonial-author {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.testimonial-author img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 15px;
+    border: 2px solid #f0f0f0;
+}
+
+.testimonial-author h4 {
+    margin: 0;
+    color: #333;
+    font-family: 'Rufina', serif;
+    font-size: 1.1em;
+}
+
+.testimonial-author p {
+    margin: 3px 0 0;
+    color: #888;
+    font-size: 0.9em;
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(calc(-50% - 15px));
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+    .testimonial-card {
+        flex: 0 0 300px;
+    }
+}
+
+@media (max-width: 992px) {
+    .testimonial-card {
+        flex: 0 0 280px;
+    }
+    
+    .testimonial-track {
+        animation-duration: 30s;
+    }
+}
+
+@media (max-width: 768px) {
+    .form-row {
+        grid-template-columns: 1fr;
+    }
+    
+    .appointment-booking {
+        padding: 50px 20px;
+    }
+    
+    .booking-form {
+        padding: 25px;
+    }
+    
+    .testimonial-card {
+        flex: 0 0 250px;
+        padding: 20px;
+    }
+    
+    .testimonial-text {
+        font-size: 0.95em;
+        min-height: 120px;
+    }
+    
+    .track-1 {
+        animation-duration: 30s;
+    }
+    
+    .track-2 {
+        animation-duration: 35s;
+    }
+    
+    .testimonial-tracks::before,
+    .testimonial-tracks::after {
+        width: 50px;
+    }
+}
+
+/* Footer Styles */
+.site-footer {
+    background-color: #f5f5f5;
+    color: #333;
+    padding: 70px 0 0;
+    font-family: 'Poppins', sans-serif;
+    border-top: 1px solid #e0e0e0;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 40px;
+}
+
+.footer-section h3 {
+    color: #028a6b; /* Slightly darker green for better contrast */
+    font-family: 'Rufina', serif;
+    font-size: 1.5em;
+    margin-bottom: 20px;
+    position: relative;
+    padding-bottom: 10px;
+}
+
+.footer-section h3::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 50px;
+    height: 2px;
+    background-color: #03A07A;
+}
+
+.footer-section h4 {
+    color: #222;
+    font-size: 1.2em;
+    margin-bottom: 20px;
+    position: relative;
+    padding-bottom: 10px;
+}
+
+.footer-section h4::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 40px;
+    height: 2px;
+    background-color: #03A07A;
+}
+
+.footer-section p {
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.social-links {
+    display: flex;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.social-links a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 36px;
+    height: 36px;
+    background-color: #e0e0e0;
+    color: #555;
+    border-radius: 50%;
+    transition: all 0.3s ease;
+}
+
+.social-links a:hover {
+    background-color: #03A07A;
+    color: white;
+    transform: translateY(-3px);
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 12px;
+}
+
+.footer-section ul li a {
+    color: #555;
+    text-decoration: none;
+    transition: color 0.3s ease, padding-left 0.3s ease;
+    display: block;
+}
+
+.footer-section ul li a:hover {
+    color: #03A07A;
+    padding-left: 5px;
+}
+
+.contact-info li {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 15px;
+    color: #555;
+    line-height: 1.6;
+}
+
+.contact-info i {
+    color: #028a6b;
+    margin-right: 15px;
+    margin-top: 5px;
+    min-width: 20px;
+}
+
+.newsletter-form {
+    display: flex;
+    margin-top: 20px;
+}
+
+.newsletter-form input {
+    flex: 1;
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+    border-right: none;
+    border-radius: 4px 0 0 4px;
+    font-size: 14px;
+    outline: none;
+    background-color: white;
+}
+
+.newsletter-form button {
+    background-color: #03A07A;
+    color: white;
+    border: none;
+    padding: 0 20px;
+    cursor: pointer;
+    border-radius: 0 4px 4px 0;
+    transition: background-color 0.3s ease;
+}
+
+.newsletter-form button:hover {
+    background-color: #028a6b;
+}
+
+.footer-bottom {
+    background-color: #e0e0e0;
+    padding: 20px 0;
+    margin-top: 50px;
+    text-align: center;
+    border-top: 1px solid #ccc;
+}
+
+.footer-bottom p {
+    color: #666;
+    margin: 0;
+    font-size: 0.9em;
+}
+
+.footer-links {
+    margin-top: 10px;
+}
+
+.footer-links a {
+    color: #555;
+    text-decoration: none;
+    font-size: 0.9em;
+    margin: 0 10px;
+    transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+    color: #03A07A;
+}
+
+.footer-links span {
+    color: #999;
+}
+
+/* Responsive Footer */
+@media (max-width: 768px) {
+    .footer-container {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+    
+    .footer-section {
+        text-align: center;
+    }
+    
+    .footer-section h3::after,
+    .footer-section h4::after {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    
+    .social-links {
+        justify-content: center;
+    }
+    
+    .newsletter-form {
+        max-width: 400px;
+        margin: 20px auto 0;
+    }
+    
+    .newsletter-form input {
+        border: 1px solid #ddd;
+        border-right: none;
+    }
+}
+
+@media (max-width: 576px) {
+    .testimonials {
+        padding: 60px 0;
+    }
+    
+    .testimonial-card {
+        flex: 0 0 85%;
+        padding: 20px;
+    }
+    
+    .testimonial-text {
+        min-height: auto;
+    }
+    
+    .testimonial-track {
+        animation: scroll-mobile 30s linear infinite;
+    }
+    
+    .track-2 {
+        animation-direction: reverse;
+    }
+    
+    @keyframes scroll-mobile {
+        0% {
+            transform: translateX(0);
+        }
+        100% {
+            transform: translateX(calc(-85% * 3 - 30px * 3));
+        }
+    }
 }
